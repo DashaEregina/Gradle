@@ -1,0 +1,6 @@
+rootProject.name = 'Gradle'
+include 'db'
+include 'api'
+include 'service'
+include 'api:src'
+findProject(':api:src')?.name = 'src'
